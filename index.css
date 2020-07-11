@@ -283,9 +283,9 @@ h3{
 
 
 #galeria{
-  padding: 5% 0 15% 0;
+  padding-top: 5%;
+  padding-bottom: 10%;
   display: grid;
-  margin-bottom: 10%;
   
   grid-template-columns: repeat(auto-fit, minmax(0 1fr));
   grid-gap: 2%;
@@ -307,17 +307,30 @@ iframe{
 }
 
 footer {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  background: rgb(2, 2, 4);
+height: 20vh;
   background: linear-gradient(90deg,
       rgba(2, 2, 4, 0.8133903133903134) 0%,
       rgba(2, 2, 4, 0.8945868945868946) 50%,
       rgba(2, 2, 4, 1) 100%);
+}
 
+#footer{
+  position: relative;
+  display: flex;
+flex-direction: row-reverse;
+  justify-content: space-between;
 
+}
+
+#footer::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  top: 0.5rem;
+  filter: blur(0.4rem);
+  opacity: 0.7;
+  z-index: -1;
 }
 
