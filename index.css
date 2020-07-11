@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap");
+
+
+header {
+  /* width: 90%; */
+  /* position: relative;  */
+  /* padding-bottom: 2vh; */
+  background: rgb(2, 2, 4);
+  background: linear-gradient(90deg,
+      rgba(2, 2, 4, 0.8133903133903134) 0%,
+      rgba(2, 2, 4, 0.8945868945868946) 50%,
+      rgba(2, 2, 4, 1) 100%);
+}
+
+#header {
+  display: flex;
+flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav {
+  width: 100%;
+  
+
+
+  /* max-width: 50%;
+  min-width: 10%; */
+  /* flex-wrap: wrap; */
+  /* width: inherit; */
+  /* position: relative; */
+  /* flex: 1 1 0;  */
+  /* margin: 0;
+padding: 0; */
+  /* flex-direction: row-reverse; */
+
+  display: flex;
+  justify-content: flex-start;
+  /* resize: horizontal;  */
+  overflow: hidden;
+  /* box-sizing: content-box;  */
+}
+
+
+
+/* @media all and (max-width: 1200px) {
+  .top-nav {
+    max-width: 72%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .top-nav {
+    max-width: 68%;
+  }
+} */
+
+@media all and (max-width: 380px) {
+  .top-nav {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo {
+
+  max-width: 20vw;
+  position: absolute;
+  min-width: 15vw;
+  transform: scale(1);
+  z-index: 1;
+  right: 1%;
+  top: 1%;
+ 
+
+}
+
+@media all and (max-width: 380px) {
+  .logo {
+    top: 1%;
+    right:35%;
+   
+  }
+}
+
+@media all and (max-width: 800px) {
+  .logo {
+    top: 1%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .logo {
+    top: 2%;
+  }
+}
+
+.list-nav {
+  display: flex; 
+  justify-content: space-between;
+  list-style: none;
+  font-family: "Wendy One", sans-serif;
+  font-size: 1.4em;
+
+}
+
+@media all and (max-width: 380px) {
+  .list-nav {
+    flex-direction: column;
+    font-size: 0.5em;
+    padding-top: 10%;
+  }
+}
+@media all and (max-width: 450px) {
+  .list-nav {
+    font-size: .5em;
+  }
+}
+
+@media all and (max-width: 620px) {
+  .list-nav {
+    font-size: 1em;
+  }
+}
+
+/* --------------------- */
+
+
+@media all and (max-width: 320px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+.item-nav {
+   display: inline-block;
+   margin: 1% 10px;   
+  position: relative;
+}
+
+.item-nav a {
+  display: inline-block;
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: inherit; 
+  position: relative;
+}
+
+/* .item-nav::after  {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+} */
+
+.item-nav a:hover {
+  color: #b94646;
+  cursor: pointer;
+} 
+
+/* .item-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+.container-title{
+  padding: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: #000000;
+}
+.container-title img {
+
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.title-box {
+   position: absolute; 
+  text-align: center;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index: 1;
+}
+
+.title {
+
+  color: whitesmoke;
+  font-size: 6vw;
+  font-family: "Notable", sans-serif;
+}
+
+#tickets {
+  
+max-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 0.5vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100%;
+  background: rgb(2, 2, 4);
+  background: linear-gradient(90deg,
+      rgba(2, 2, 4, 0.8133903133903134) 0%,
+      rgba(2, 2, 4, 0.8945868945868946) 50%,
+      rgba(2, 2, 4, 1) 100%);
+}
+
+.ticket-border {
+  max-height: 50vh;
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid blue;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.ticket-box {
+  /* text-align: center; */
+  font-family: Tahoma, sans-serif;
+  color: whitesmoke;
+  width: inherit;
+  height: 20%;
+ max-height: 70vh;
+  /* flex-shrink: 1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  /* height: 30vh; */
+
+}
+
+
+.ticket-box img {
+padding-top: 4%;
+  padding-bottom: 4%;
+  width: 10vw; 
+  /* min-width: 50%;  */
+  /* max-width: 10vw; */
+}
+
+.description {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  height: 5vh;
+ 
+  background-color: #00ace6;
+  font-size: 1vw;
+  
+}
+
+
+
+.description:hover {
+  background-color: #0086b3;
+  color: 	 #e6f9ff;
+  }
+
+h3{
+  display: inline;
+
+}
+
+@media all and (min-width: 320px) {
+  h3 {
+    max-width: 40%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  h3 {
+    max-width: 10%;
+  }
+}
+
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  background: rgb(2, 2, 4);
+  background: linear-gradient(90deg,
+      rgba(2, 2, 4, 0.8133903133903134) 0%,
+      rgba(2, 2, 4, 0.8945868945868946) 50%,
+      rgba(2, 2, 4, 1) 100%);
+
+  /* max-width: 100%; */
+
+}
+
+
+/* boton nav piolla */
+
+/* <div class="button-border"><button class="button">Submit</button></div>
+CSS
+.button {
+  background-color: #c47135;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+.button:before,
+.button:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: '';
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.button:before {
+  border-top: 2px solid #c47135;
+  left: 0px;
+  top: -5px;
+}
+.button:after {
+  border-bottom: 2px solid #c47135;
+  bottom: -5px;
+  right: 0px;
+}
+.button:hover {
+  background-color: #c47135;
+}
+.button:hover:before,
+.button:hover:after {
+  height: 100%;
+  width: 100%;
+} */
