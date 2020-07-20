@@ -1,25 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
 
 header {
   background: rgb(2, 2, 4);
-  background: linear-gradient(90deg,
-      rgba(2, 2, 4, 0.8133903133903134) 0%,
-      rgba(2, 2, 4, 0.8945868945868946) 50%,
-      rgba(2, 2, 4, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 4, 0.8133903133903134) 0%,
+    rgba(2, 2, 4, 0.8945868945868946) 50%,
+    rgba(2, 2, 4, 1) 100%
+  );
 }
 
 #header {
   position: relative;
   display: flex;
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   justify-content: space-between;
-
 }
 
 #header::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -30,7 +32,6 @@ flex-direction: row-reverse;
   z-index: -1;
 }
 body {
-
   margin: 0;
   padding: 0;
 }
@@ -42,25 +43,16 @@ body {
   justify-content: flex-start;
 
   overflow: hidden;
-
 }
-
-@media all and (max-width: 200px) {
-  .top-nav {
-    font-size: 10px ;
-  }
-} 
 
 @media all and (max-width: 380px) {
   .top-nav {
     justify-content: center;
     align-items: center;
-    
   }
 }
 
 .logo {
-
   max-width: 20vw;
   position: absolute;
   min-width: 15vw;
@@ -68,15 +60,12 @@ body {
   z-index: 1;
   right: 1%;
   top: 25%;
- 
-
 }
 
 @media all and (max-width: 380px) {
   .logo {
-   padding-top: 3%;
-    right:40%;
-   
+    padding-top: 2%;
+    right: 38%;
   }
 }
 
@@ -93,17 +82,16 @@ body {
 }
 
 .list-nav {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   list-style: none;
   font-family: "Wendy One", sans-serif;
   font-size: 1.4em;
-
 }
 
 @media all and (max-width: 200px) {
   .list-nav {
-font-size: 5px;
+    font-size: 3px;
   }
 }
 
@@ -128,18 +116,15 @@ font-size: 5px;
 
 /* --------------------- */
 
-
 @media all and (max-width: 320px) {
   .title {
     font-size: 1.8rem;
   }
-
 }
 
-
 .item-nav {
-   display: inline-block;
-   margin: 1% 10px;   
+  display: inline-block;
+  margin: 1% 10px;
   position: relative;
 }
 
@@ -147,54 +132,49 @@ font-size: 5px;
   display: inline-block;
   color: whitesmoke;
   text-decoration: none;
-  cursor: inherit; 
+  cursor: inherit;
   position: relative;
 }
 
-
- .item-nav a:hover {
+.item-nav a:hover {
   color: #b94646;
   cursor: pointer;
-  
-} 
+}
 
-.container-title{
+.container-title {
   padding: 0;
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: #000000;
+  background-color: #000000;
 }
 .container-title img {
-
   max-width: 100%;
   max-height: 80vh;
 }
 
 .title-box {
-   position: absolute; 
+  position: absolute;
   text-align: center;
   width: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-z-index: 1;
+  z-index: 1;
 }
 
 .title {
-
   color: whitesmoke;
   font-size: 6vw;
   font-family: "Notable", sans-serif;
 }
-  
+
 /* -------- */
 
 #tickets {
-  
-max-height: 50vh;
+  max-height: 50vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   justify-content: center;
@@ -203,127 +183,124 @@ max-height: 50vh;
   min-width: 0;
   max-width: 100%;
   background: rgb(2, 2, 4);
-  background: linear-gradient(90deg,
-      rgba(2, 2, 4, 0.8133903133903134) 0%,
-      rgba(2, 2, 4, 0.8945868945868946) 50%,
-      rgba(2, 2, 4, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 4, 0.8133903133903134) 0%,
+    rgba(2, 2, 4, 0.8945868945868946) 50%,
+    rgba(2, 2, 4, 1) 100%
+  );
 }
 
 #ticket-border {
-
   color: white;
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom,  
-#1c92d2
-, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+  border-image: linear-gradient(to bottom, #1c92d2, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .ticket-box {
- 
-  font-family: Tahoma, sans-serif;
+  font-family: "Mouse Memoirs", sans-serif;
   color: whitesmoke;
   width: inherit;
   height: 20%;
- max-height: 70vh;
+  max-height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-
 }
 
 .ticket-box img {
-padding-top: 4%;
+  padding-top: 4%;
   padding-bottom: 4%;
-  width: 10vw; 
-
+  width: 10vw;
 }
 
 .description {
-  
   width: 100%;
   display: flex;
-  align-items: center;  
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   height: 5vh;
   background-color: #00ace6;
-  font-size: 1vw;
-  
+  font-size: 1.5vw;
+  white-space: nowrap;
 }
-
 
 .description:hover {
   background-color: #0086b3;
-  color: 	 #e6f9ff;
-  }
-
-h3{
-  display: inline;
-
+  color: #e6f9ff;
 }
 
-@media all and (min-width: 320px) {
-  h3 {
-    max-width: 40%;
+@media all and (max-width: 450px) {
+  .description {
+    font-size: 1.8vw;
   }
 }
 
-@media all and (min-width: 800px) {
-  h3 {
-    max-width: 10%;
+@media all and (max-width: 620px) {
+  .description {
+    font-size: 2vw;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .description {
+    font-size: 0.7em;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .description {
+    font-size: 0.8em;
   }
 }
 
 /* -------- */
 
-
-#galeria{
+#galeria {
   padding-top: 5%;
   padding-bottom: 10%;
   display: grid;
-  
+  margin-bottom: 10%;
   grid-template-columns: repeat(auto-fit, minmax(0 1fr));
   grid-gap: 2%;
   justify-content: center;
-   align-items: center; 
+  align-items: center;
   min-height: 0;
   min-width: 0;
   max-width: 100%;
   background: rgb(2, 2, 4);
-  background: linear-gradient(90deg,
-      rgba(2, 2, 4, 0.8133903133903134) 0%,
-      rgba(2, 2, 4, 0.8945868945868946) 50%,
-      rgba(2, 2, 4, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 4, 0.8133903133903134) 0%,
+    rgba(2, 2, 4, 0.8945868945868946) 50%,
+    rgba(2, 2, 4, 1) 100%
+  );
 }
 
-
-iframe{
+iframe {
   max-width: 100%;
 }
 
 footer {
-height: 20vh;
-  background: linear-gradient(90deg,
-      rgba(2, 2, 4, 0.8133903133903134) 0%,
-      rgba(2, 2, 4, 0.8945868945868946) 50%,
-      rgba(2, 2, 4, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 4, 0.8133903133903134) 0%,
+    rgba(2, 2, 4, 0.8945868945868946) 50%,
+    rgba(2, 2, 4, 1) 100%
+  );
 }
 
-#footer{
+#footer {
   position: relative;
   display: flex;
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   justify-content: space-between;
-
 }
 
 #footer::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -334,3 +311,190 @@ flex-direction: row-reverse;
   z-index: -1;
 }
 
+.logo-bottom {
+  max-width: 20vw;
+
+  min-width: 15vw;
+  transform: scale(1);
+  right: 1%;
+  bottom: 20%;
+}
+
+/* --------------------- */
+
+.login {
+  padding-top: 5vh;
+  /* height: 120vh; */
+  max-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(2, 2, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 2, 4, 0.8133903133903134) 0%,
+    rgba(2, 2, 4, 0.8945868945868946) 50%,
+    rgba(2, 2, 4, 1) 100%
+  );
+}
+
+.login-wrap {
+  width: 40vw;
+  height: 80vh;
+  position: relative;
+  background: url(./img/log-back.jpg) center no-repeat;
+
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.login-html {
+  width: 40vw;
+  height: 80vh;
+  position: absolute;
+  background: rgba(40, 57, 101, 0.9);
+}
+
+.tab {
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 1.8vw !important;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: all 0.4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+  display: none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button {
+  text-transform: uppercase;
+}
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+  color: #fff;
+  border-color: #1161ee;
+}
+.login-form {
+  min-height: 345px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.login-form .group {
+  margin-bottom: 15px;
+}
+.login-form .group .label,
+.login-form .group,
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.login-form .group .input {
+  width: 35vw;
+}
+
+.login-form .group .label {
+  color: #aaa;
+  font-size: 12px;
+}
+.login-form .group .button {
+  background: #1161ee;
+}
+.login-form .group label .icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0s;
+}
+.login-form .group label .icon:before {
+  left: 3px;
+  width: 5px;
+  bottom: 6px;
+  transform: scale(0) rotate(0);
+}
+.login-form .group label .icon:after {
+  top: 6px;
+  right: 0;
+  transform: scale(0) rotate(0);
+}
+.login-form .group .check:checked + label {
+  color: #fff;
+}
+.login-form .group .check:checked + label .icon {
+  background: #1161ee;
+}
+.login-form .group .check:checked + label .icon:before {
+  transform: scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after {
+  transform: scale(1) rotate(-45deg);
+}
+.login-html
+  .sign-in:checked
+  + .tab
+  + .sign-up
+  + .tab
+  + .login-form
+  .sign-in-htm {
+  transform: rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+  transform: rotate(0);
+}
+
+.hr {
+  height: 2px;
+  margin: 60px 0 50px 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+.foot-lnk {
+  margin-top: -5vh;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: center;
+}
+
+.forgot {
+  margin-top: -5vh;
+  color: whitesmoke;
+
+  text-align: center;
+}
